@@ -1,3 +1,6 @@
+from random import randint
+import random
+
 while True:
     print("Escolha uma opção:")
     print("1. Pedra")
@@ -13,12 +16,9 @@ while True:
     opcoes = ["Pedra", "Papel", "Tesoura"]
     jogador_escolha -= 1  # Ajusta para índice da lista
 
-    computador_escolha = 1
-
-  # --------------------------------------------------
-  # FAÇA COM QUE A ESCOLHA DO COMPUTADOR SEJA ALEATÓRIA
-  # --------------------------------------------------
-
+    computador_escolha = randint(0,2)
+    
+                       
     print("Você escolheu:", opcoes[jogador_escolha])
     print("O computador escolheu:", opcoes[computador_escolha])
 
